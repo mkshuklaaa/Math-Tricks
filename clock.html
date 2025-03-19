@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Quiz App</h1>
+        
+        <!-- Clocks Section -->
+        <section id="clocks">
+            <h2>Clocks</h2>
+            <label for="angle">Enter Hours and Minutes:</label>
+            <input type="number" id="hours" placeholder="Hours" min="0" max="12">
+            <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+            <button onclick="calculateClockAngle()">Find Angle</button>
+            <p id="clock-result"></p>
+        </section>
+        
+        <!-- Calendars Section -->
+        <section id="calendars">
+            <h2>Calendars</h2>
+            <label for="day">Enter Date (YYYY-MM-DD):</label>
+            <input type="date" id="date-input">
+            <button onclick="findDayOfWeek()">Find Day</button>
+            <p id="calendar-result"></p>
+        </section>
+        
+       
+        
+        
+        
+        <!-- Remainder Theorem Section -->
+        <section id="remainder-theorem">
+            <h2>Remainder Theorem</h2>
+            <label for="dividend">Enter Dividend:</label>
+            <input type="number" id="dividend" placeholder="Dividend">
+            <label for="divisor">Enter Divisor:</label>
+            <input type="number" id="divisor" placeholder="Divisor">
+            <button onclick="calculateRemainder()">Find Remainder</button>
+            <p id="remainder-result"></p>
+        </section>
+        
+        <!-- LCM and HCF Section -->
+        <section id="lcm-hcf">
+            <h2>LCM and HCF</h2>
+            <label for="numbers">Enter Numbers (comma-separated):</label>
+            <input type="text" id="numbers" placeholder="e.g. 12, 18, 24">
+            <button onclick="calculateLCMHCF()">Find LCM & HCF</button>
+            <p id="lcm-hcf-result"></p>
+        </section>
+        
+       
+        
+        <!-- Squares and Roots Section -->
+        <section id="squares-roots">
+            <h2>Finding Squares, Cubes, Square Roots & Cube Roots</h2>
+            <label for="square-number">Enter Number:</label>
+            <input type="number" id="square-number" placeholder="Number">
+            <button onclick="calculateSquaresAndRoots()">Calculate</button>
+            <p id="squares-result"></p>
+        </section>
+        
+        <!-- Percentages Section -->
+        <section id="percentages">
+            <h2>Finding Percentages</h2>
+            <label for="percentage-number">Enter Value and Percentage:</label>
+            <input type="number" id="percentage-value" placeholder="Value">
+            <input type="number" id="percentage-rate" placeholder="%">
+            <button onclick="calculatePercentage()">Calculate</button>
+            <p id="percentage-result"></p>
+        </section>
+        
+        <!-- Profit & Loss Section -->
+        <section id="profit-loss">
+            <h2>Profit & Loss</h2>
+            <label for="cost-price">Enter Cost Price:</label>
+            <input type="number" id="cost-price" placeholder="Cost Price">
+            <label for="selling-price">Enter Selling Price:</label>
+            <input type="number" id="selling-price" placeholder="Selling Price">
+            <button onclick="calculateProfitLoss()">Find Profit/Loss</button>
+            <p id="profit-loss-result"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
